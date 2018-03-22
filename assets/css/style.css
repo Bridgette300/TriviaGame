@@ -1,0 +1,14 @@
+.container-game {
+    margin: 0 auto;
+    width: 800px;
+}
+
+.bStyle {
+    background-color: lightpink;
+    width: 100%;
+    height: 100%;
+}
+
+.darkMagenta {
+    background-color: darkmagenta !important!
+}
