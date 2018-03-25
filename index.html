@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Trivia Game</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-   
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/reset.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.css" />
@@ -15,43 +14,25 @@
     
     <div class="container-game">
         <div clas="header">
-                <div class=" darkMagenta jumbotron jumbotron-fluid">
+                <div class="darkMagenta jumbotron jumbotron-fluid">
                         <div class="container">
                           <h1 class="display-4">Bridgette's Trivia Game</h1>
                           <p class="lead">Below is a quick trivia game about me. Answer the questions about me within the time limit. If time runs out, you lose. Good luck!</p>
                         </div>
                       </div>
         </div>
-        <div class="container-q">
-            <p>What is my favorite color?</p>
-            <ul>
-                <li>Pink</li>
-                <li>Aqua</li>
-                <li>Purple</li>
-                <li>Black</li>
-            </ul>
-            <p>What month is my birthday in?</p>
-            <ul>
-                <li>January</li>
-                <li>December</li>
-                <li>October</li>
-                <li>July</li>
-            </ul>
-            <p>Do I own pets?</p>
-            <ul>
-                <li>Yes</li>
-                <li>No</li>
-             
-            </ul>
-            <p>Bonus: What is my favorite thing to do?</p>
-            <ul>
-                <li>Sleep</li>
-                <li>Study</li>
-                <li>Go out</li>
-                <li>Watch tv</li>
-            </ul>
-        </div>
+     <div class="container-q">
+
+        <!-- start game on button click -->
+        <button class="js-start">Start Game</button>
+
+        <!-- questions get rendered here -->
+        <div class="js-questions alignQ"></div>
+
+        </div>  
     </div>
+        <!-- jQuery -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <script src="./assets/javascript/app.js"></script> 
 </body>

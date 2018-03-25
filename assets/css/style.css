@@ -12,3 +12,8 @@
 .darkMagenta {
     background-color: darkmagenta !important!
 }
+
+.alignQ {
+    text-align: center;
+    margin: 0 auto;
+}

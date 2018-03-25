@@ -1,5 +1,57 @@
 $(document).ready(function(){
+// global variables
 
+let questions = [
+    {
+        "question": "What is my favorite color?",
+        "answers" : ["pink", "purple", "black", "aqua"],
+        "correctAnswer": "purple"
+    },
+    {
+        "question": "What month is my birthday in?",
+        "answers" : ["January", "December", "October", "July"],
+        "correctAnswer": "October"
+    },
+    {
+        "question": "Do I own pets?",
+        "answers" : ["Yes", "No"],
+        "correctAnswer": "Yes"
+    },
+    {
+        "question": "What is my favorite thing to do?",
+        "answers": ["sleep", "study", "go out", "watch tv"],
+        "correctAnswer": "sleep"
+    }
+  
+]
+
+//functions
+
+function startGame(){
+    //populate questions div
+    for (var i = 0; i < questions.length; i++) {
+        $('.js-questions').append('<p>' + questions[i].question + '</p>');
+
+        //loop through answers
+        for (var j = 0; j < questions[i].answers.length; j++) {
+            $('.js-questions').append('<input type="radio" value="" name="q' + i + '">' + " " + questions[i].answers[j] + '</input>' + "    ");
+        
+            $('.js-questions').append('&nbsp;');
+        }
+        $('.js-questions').append('<br><hr>');
+    }
+
+    $('.js-start').hide();
+}
+
+//events
+
+//click start button will start the game
+
+$('.js-start').on('click', function(){
+    //execute instructons
+    startGame();
+})
 
 // need a timer or counter
 
