@@ -34,7 +34,7 @@ function startGame(){
 
         //loop through answers
         for (var j = 0; j < questions[i].answers.length; j++) {
-            $('.js-questions').append('<input type="radio" value="" name="q' + i + '">' + " " + questions[i].answers[j] + '</input>' + "    ");
+            $('.js-questions').append('<input type="radio" value="' + questions[i].answers[j] + '" name="q' + i + '">' + " " + questions[i].answers[j] + '</input>' + "    ");
         
             $('.js-questions').append('&nbsp;');
         }
